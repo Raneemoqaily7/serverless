@@ -1,5 +1,9 @@
-As you can see, only major versions are available. That's because Vercel will automatically roll out minor and patch updates if needed (for example in the case that a security issue needs to be fixed).
+Serverless offloads all management responsibility for backend cloud infrastructure and operations tasks - provisioning,
+ scheduling, scaling, patching and more - to the cloud provider. This gives developers more time to develop 
+ and optimize their front-end application code and business logic. And with serverless,
+customers never pay for idle capacity. They pay only for the resources required to run their applications,
+and only when those applications are running.
 
-Defining the node property inside 
-engines
- of a package.json file will override the selection made in the Project Settings and print a Build Step warning if the version does not match.
+The name notwithstanding, there are most definitely servers in serverless computing. 
+The term 'serverless' describes the customer's experience with those servers: they are invisible to the customer,
+ who doesn't see them, manage them, or interact with them in any way.
