@@ -1,0 +1,5 @@
+As you can see, only major versions are available. That's because Vercel will automatically roll out minor and patch updates if needed (for example in the case that a security issue needs to be fixed).
+
+Defining the node property inside 
+engines
+ of a package.json file will override the selection made in the Project Settings and print a Build Step warning if the version does not match.

@@ -1,14 +1,14 @@
 from http.server import BaseHTTPRequestHandler
-from datetime import datetime
+from os.path import join
 
 class handler(BaseHTTPRequestHandler):
 
-  def do_GET(self):
-    #  request is successful and you will get your response
-    self.send_response(200)
-    self.send_header('Content-type', 'text/plain')
-    self.end_headers()
-    self.wfile.write(str(datetime.now().strftime('%Y-%m-%d %H:%M:%S')).encode())
-    return
-
+    def do_GET(self):
+        self.send_response(200)
+        self.send_header('Content-type','text/plain')
+        self.end_headers()
+        with open(join('data', 'file.txt'), 'r') as file:
+          for line in file:
+            self.wfile.write(line.encode())
+        return
 
